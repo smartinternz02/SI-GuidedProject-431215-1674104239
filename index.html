@@ -1,0 +1,43 @@
+<html>
+
+<head> 
+
+<style> 
+body{
+background-size: cover;
+background-image: url('https://c1.wallpaperflare.com/preview/937/818/491/stethoscope-doctor-md-medical-health-hospital.jpg');
+}
+
+</style>
+
+</head>
+
+<body>
+      
+        
+<!-- Main input for receiving Quary for our ML -->
+<form action= "/y_predict" method="post">
+    
+<h3> Maternal Health Risk Prediction </h3>
+
+<p> Age </p>
+<p><input type="text" name="Age" placeholder="eg: 35" required="required" /></p>
+<p> SystolicBP </p>
+<p><input type="text" name="SystolicBP" placeholder="eg: 120" required="required" /></p>
+<p> DiastolicBP </p>
+<p><input type="text" name="DiastolicBP" placeholder="eg: 60" required="required" /></p>
+<p> BS </p>
+<p><input type="text" name="BS" placeholder="eg: 6.1" required="required" /></p>
+<p> BodyTemp </p>
+<p><input type="text" name="BodyTemp" placeholder="eg: 98" required="required" /></p>
+
+
+<a><button type="submit">Predict</button></a>
+            
+</form>
+              
+<p> <b> {{prediction_test}} </b> </p>
+</body>
+</html>
+          
+          
